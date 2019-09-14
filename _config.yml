@@ -1,23 +1,33 @@
-# Site Build Settings
+# general configuration
+url: http://excentris.net
+baseurl: ''
 
-# jekyll-paginate configuration
-paginate:            5
+# compass configuration
+compass:
+  # an avatar or logo (optional)
+  logo: "/images/imnotafred_logo.svg"
+  # author will appear under the avatar (optional)
+  author: "ImNotAfred"
+  # email
+  mail: "imnotafred@outlook.com"
+  # tagline will appear under the title (optional)
+  tagline: "An indie game developer from Poland"
+  # if include_content is true, the contents of the content.html include will be
+  # added right above the generated item list, if present
+  include_content: true
+  # if include_analytics is true, the content of the analytics.html include will
+  # be added at the end of the <head> section. You can add your Google Analytics
+  # Tracking Code to that file.
+  include_analytics: false
+  # Twitter @username (as defined by the Twitter Card specs)
+  twitter: "compass"
 
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           none
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+# exclude
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
-sass:
-  sass_dir: assets/css
-  style: :nested
+# Dependencies
+markdown: kramdown
+highlighter: rouge
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Millennial"
-description:	       "a Jekyll theme for running a blog or publication"
-author:              "Paul Le"
-
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+# Permalinks
+permalink: pretty
